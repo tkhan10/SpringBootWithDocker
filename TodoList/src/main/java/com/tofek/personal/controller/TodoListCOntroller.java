@@ -27,9 +27,11 @@ public class TodoListCOntroller {
 	public void updateTodoList(@PathVariable String name) {
 		System.out.println("Todo List -"+name);
 	}
-	@DeleteMapping("/deleteTodo")
+	
+	// Need to update @DeleteMapping
+	@GetMapping("/deleteTodo")
 	public void deleteTodoList() {
-		
+		System.out.println("I am in delete method");
 	}
 	
 	@GetMapping("/getTodoList")
