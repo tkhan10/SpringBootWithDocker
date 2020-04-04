@@ -1,0 +1,7 @@
+FROM openjdk:8-jdk-alpine
+
+ADD ./Documents/SpringBootWithDocker/TodoList-0.0.1-SNAPSHOT.jar app.jar
+
+WORKDIR /usr/app
+
+ENTRYPOINT ["java","-jar","/app.jar"]
